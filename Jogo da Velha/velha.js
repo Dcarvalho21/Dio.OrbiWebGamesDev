@@ -55,11 +55,13 @@ function reiniciar()
     vencedor = null;
     jogador = 'X';
     jogadas = 0;
-    vencedorHTML = ' ';   
+    vencedorHTML.innerHTML = ' ';  
+    jogadorSelec.innerHTML = jogador; 
     for (let i = 0; i < quadrados.length; i++)
         {
             quadrados[i].innerHTML = '-';
             quadrados[i].style.color = '#eee';
+            quadrados[i].style.background = '#eee';
         }
 }
 
